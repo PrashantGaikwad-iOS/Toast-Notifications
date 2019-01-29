@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30B8AB3D40BCDA28B5CF3648 /* Pods_Toast_Notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEB9CEAB21FAE2FC624747E /* Pods_Toast_Notifications.framework */; };
 		8914437D21FCD5FC00CC609F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914437C21FCD5FC00CC609F /* AppDelegate.swift */; };
 		8914437F21FCD5FC00CC609F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914437E21FCD5FC00CC609F /* ViewController.swift */; };
 		8914438221FCD5FC00CC609F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8914438021FCD5FC00CC609F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2899AC4AB02C040F67820B2B /* Pods-Toast Notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast Notifications.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toast Notifications/Pods-Toast Notifications.release.xcconfig"; sourceTree = "<group>"; };
+		3BEB9CEAB21FAE2FC624747E /* Pods_Toast_Notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toast_Notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8914437921FCD5FC00CC609F /* Toast Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toast Notifications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8914437C21FCD5FC00CC609F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8914437E21FCD5FC00CC609F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		8914438321FCD5FD00CC609F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8914438621FCD5FD00CC609F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8914438821FCD5FD00CC609F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11EE8D660FDD09AA5CE908A /* Pods-Toast Notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast Notifications.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toast Notifications/Pods-Toast Notifications.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B8AB3D40BCDA28B5CF3648 /* Pods_Toast_Notifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31B90C99A732834E9F6D5506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F11EE8D660FDD09AA5CE908A /* Pods-Toast Notifications.debug.xcconfig */,
+				2899AC4AB02C040F67820B2B /* Pods-Toast Notifications.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		405D28D3BECA965FD7CADB68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BEB9CEAB21FAE2FC624747E /* Pods_Toast_Notifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8914437021FCD5FC00CC609F = {
 			isa = PBXGroup;
 			children = (
 				8914437B21FCD5FC00CC609F /* Toast Notifications */,
 				8914437A21FCD5FC00CC609F /* Products */,
+				31B90C99A732834E9F6D5506 /* Pods */,
+				405D28D3BECA965FD7CADB68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8914438B21FCD5FD00CC609F /* Build configuration list for PBXNativeTarget "Toast Notifications" */;
 			buildPhases = (
+				0C8AF638A2FB217EEC8A07D5 /* [CP] Check Pods Manifest.lock */,
 				8914437521FCD5FC00CC609F /* Sources */,
 				8914437621FCD5FC00CC609F /* Frameworks */,
 				8914437721FCD5FC00CC609F /* Resources */,
+				6AAF149392CA8B3E06F8B914 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C8AF638A2FB217EEC8A07D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Toast Notifications-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AAF149392CA8B3E06F8B914 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Toast Notifications/Pods-Toast Notifications-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Toast Notifications/Pods-Toast Notifications-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8914437521FCD5FC00CC609F /* Sources */ = {
@@ -280,6 +345,7 @@
 		};
 		8914438C21FCD5FD00CC609F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11EE8D660FDD09AA5CE908A /* Pods-Toast Notifications.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +364,7 @@
 		};
 		8914438D21FCD5FD00CC609F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2899AC4AB02C040F67820B2B /* Pods-Toast Notifications.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
